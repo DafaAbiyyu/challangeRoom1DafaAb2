@@ -40,6 +40,6 @@ class AdapterSiswa(private val sisaw: ArrayList<tbsiswa>,private val listener : 
     interface OnAdapterListener {
         fun onClick(siswa: tbsiswa)
         fun onUpdate(siswa: tbsiswa)
-      //  fun onDelete(siswa: tbsiswa)
+        fun onDelete(siswa: tbsiswa)
     }
 }

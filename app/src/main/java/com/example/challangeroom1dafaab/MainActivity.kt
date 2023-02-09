@@ -63,10 +63,10 @@ class MainActivity : AppCompatActivity() {
             override fun onUpdate(siswa: tbsiswa) {
                 intentEdit(siswa.nis,Constant.TYPE_UPDATE)
             }
-        /*    override fun onDelete(siswa: tbsiswa) {
+            override fun onDelete(siswa: tbsiswa) {
                deleteDialog( siswa )
             }
-        */})
+        })
 
         listData.apply {
             layoutManager = LinearLayoutManager(applicationContext)
@@ -75,7 +75,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
- /*   private fun deleteDialog(siswa: tbsiswa) {
+    private fun deleteDialog(siswa: tbsiswa) {
         val alertDialog = AlertDialog.Builder(this)
         alertDialog.apply {
             setTitle("konfirmasi")
@@ -93,5 +93,5 @@ class MainActivity : AppCompatActivity() {
         }
         alertDialog.show()
   }
-*/
+
 }
